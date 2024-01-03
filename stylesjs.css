@@ -1,0 +1,104 @@
+body{
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(42, 32, 32);
+    line-height:18px;
+}
+
+main {
+    width:90%;
+    margin:auto;
+    background-color:azure;
+    padding:20px;
+    display:flex;
+    flex-direction:row-reverse;
+}
+
+aside{
+    width:30%;
+    margin-top: 34px;
+    background-color: rgb(185, 250, 250);
+}
+article {
+    width:60%;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+}
+article p{
+    width:80%;
+}
+h1{  width:80%;
+    height:300px;
+    background: url(".//image/catphoto.jpg") no-repeat ;
+    line-height: 200px;
+    font-weight: 700;
+    font-size: 40px;
+    padding: 20px;
+}
+h2{ 
+    color:rgb(103, 36, 161);
+    font-weight: 900;
+    font-size: 25px; 
+    margin-bottom: 30px;
+    text-align:center;
+}
+ul{
+    list-style: none;
+}
+.hide-menu{
+    display:none;
+}
+.show-menu{
+    display: block;
+}
+a{
+    text-decoration: none;
+    
+}
+nav{
+    margin-top:50px;
+}
+
+nav ul li {
+    padding:15px;
+    font-size: 16px;
+    font-weight: 800;
+    text-transform: uppercase;
+    
+}
+nav ul li a{
+    color:rgb(233, 169, 84);
+}
+nav ul li ul a{
+    padding:5px;
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+@media (max-width: 900px){
+    aside{
+        width:40%;
+    }
+    article {
+        width:50%;
+    }
+}
+@media (max-width: 650px){
+    h1{  width:70%;
+       
+    }
+    h2{ 
+        font-weight: 800;
+        font-size: 20px; 
+    }
+    nav ul li {
+        font-size: 14px;
+        font-weight: 800;        
+    }
+    nav ul li ul a{
+        font-size: 12px;
+        font-weight: 800;
+    }
+}
